@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@../../../styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myjavafxproject.HelloController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../../images/welcomePage.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="215.0" layoutY="356.0" prefHeight="0.0" prefWidth="360.0" />
+      <Button focusTraversable="false" layoutX="328.0" layoutY="328.0" onAction="#onHelloButtonClick" prefHeight="42.0" prefWidth="166.0" style="-fx-border-color: #00BFFF;" text="Enter as a Guest" />
+      <Button focusTraversable="false" layoutX="328.0" layoutY="395.0" mnemonicParsing="false" onAction="#onLoginPage" prefHeight="42.0" prefWidth="166.0" text="Login to Your Club" />
+      <Button focusTraversable="false" layoutX="328.0" layoutY="464.0" onAction="#onQuitClick" prefHeight="42.0" prefWidth="166.0" style="-fx-border-color: #00BFFF;" text="Quit" />
+      <Label fx:id="welcomeText" layoutX="166.0" layoutY="186.0" text="Welcome To Cricket Player Database System" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

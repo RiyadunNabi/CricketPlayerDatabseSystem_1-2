@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@../../../styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myjavafxproject.SearchPlayersController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/countryWiseCount.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="209.0" layoutY="14.0" text="Country wise Player Count" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold" size="30.0" />
+         </font>
+      </Label>
+      <TableView fx:id="countryPlayerTable" layoutX="63.0" layoutY="81.0" prefHeight="438.0" prefWidth="674.0" AnchorPane.leftAnchor="63.0" AnchorPane.rightAnchor="63.39999999999998">
+        <columns>
+          <TableColumn fx:id="countryName" prefWidth="338.39996945858" text="Country" />
+          <TableColumn fx:id="playerCount" prefWidth="334.3999938964844" text="Player Count" />
+        </columns>
+         <styleClass>
+            <String fx:value="transparent-table" />
+            <String fx:value="column-header-background" />
+            <String fx:value="table-cell" />
+            <String fx:value="table-row-cell" />
+         </styleClass>
+      </TableView>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="81.0" text="Back" textFill="WHITE" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="705.2" AnchorPane.topAnchor="12.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Bank Gothic Medium BT" size="18.0" />
+         </font>
+      </Button>
+      <ButtonBar layoutX="89.0" layoutY="399.0" prefHeight="40.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

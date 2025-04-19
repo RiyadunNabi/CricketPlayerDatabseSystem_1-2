@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@../../../styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myjavafxproject.PlayerInfoController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/playerInfoTable.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="292.0" layoutY="22.0" text="Player(s) Info" textAlignment="JUSTIFY" textOverrun="CLIP">
+         <font>
+            <Font name="Book Antiqua Bold" size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="708.0" layoutY="18.0" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="42.0" prefWidth="77.0" text="Close" textFill="RED" AnchorPane.rightAnchor="14.399999999999977" AnchorPane.topAnchor="18.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Bank Gothic Medium BT" size="18.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="30.0" layoutY="60.0" prefHeight="376.0" prefWidth="746.0">
+         <children>
+            <TableView fx:id="playerTableView" layoutX="-1.0" layoutY="12.8" prefHeight="510.0" prefWidth="750.0" styleClass="transparent-table" AnchorPane.topAnchor="13.0">
+               <columns>
+                  <TableColumn fx:id="nameColumn" prefWidth="135.19998168945312" text="Name" />
+                  <TableColumn fx:id="countryColumn" prefWidth="75.20001220703125" text="Country" />
+                  <TableColumn fx:id="ageColumn" minWidth="0.0" prefWidth="65.5999755859375" text="Age" />
+                  <TableColumn fx:id="heightColumn" prefWidth="53.60003662109375" text="Height" />
+                  <TableColumn fx:id="clubColumn" prefWidth="128.0" text="Club" />
+                  <TableColumn fx:id="positionColumn" prefWidth="85.5999755859375" text="Position" />
+                  <TableColumn fx:id="jerseyNoColumn" prefWidth="66.4000244140625" text="Jersey No." />
+                  <TableColumn fx:id="weeklySalaryColumn" prefWidth="137.5999755859375" text="Weekly Salary" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

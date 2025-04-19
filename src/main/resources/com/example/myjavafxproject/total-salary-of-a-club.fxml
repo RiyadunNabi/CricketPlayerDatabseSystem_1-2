@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@../../../styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myjavafxproject.ClubSalaryDisplayerController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/ClubSalary.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="209.0" layoutY="21.0" prefHeight="86.0" prefWidth="382.0" text="Total yearly salary of a club">
+         <font>
+            <Font name="Book Antiqua Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToClubSearch" prefHeight="34.0" prefWidth="87.0" text="Back" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Book Antiqua Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="showClubNameField" layoutX="52.0" layoutY="256.0" prefHeight="86.0" prefWidth="300.0" style="-fx-border-color: #000000;" styleClass="label-highlighted" />
+      <Label fx:id="showSalaryField" layoutX="442.0" layoutY="256.0" prefHeight="86.0" prefWidth="300.0" style="-fx-border-color: #000000;" styleClass="label-highlighted" />
+      <Text layoutX="161.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Club">
+         <font>
+            <Font name="Book Antiqua Bold" size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="543.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary">
+         <font>
+            <Font name="Book Antiqua Bold" size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
