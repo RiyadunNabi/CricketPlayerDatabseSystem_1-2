@@ -20,7 +20,7 @@ A JavaFX-based application for desktop environments.
 ### Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/MyJavaFXProject.git
+git clone https://github.com/RiyadunNabi/CricketPlayerDatabseSystem_1-2.git
 cd MyJavaFXProject
 ```
 
